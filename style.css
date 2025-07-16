@@ -8,3 +8,6 @@ body {
     background-position: center;
     background-size: cover;
 }
+footer {
+    text-align: end;
+}
