@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Suporte Técnico - Restaurante Boca Cheia</title>
+</head>
+<body>
 
+    <h1>Restaurante Boca Cheia</h1>
+    <h2>Suporte Técnico</h2>
+
+    <hr>
+
+    <p>Se você está enfrentando problemas com pedidos, pagamentos ou precisa de ajuda com nosso sistema, preencha o formulário abaixo. Entraremos em contato o mais breve possível.</p>
+
+    <h3>Formulário de Contato</h3>
+
+    <form action="#" method="post">
+        <p>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail para contato:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="telefone">Telefone (opcional):</label><br>
+            <input type="tel" id="telefone" name="telefone">
+        </p>
+
+        <p>
+            <label for="assunto">Assunto do problema:</label><br>
+            <select id="assunto" name="assunto" required>
+                <option value="">-- Selecione --</option>
+                <option value="pedido">Problema com pedido</option>
+                <option value="pagamento">Problema com pagamento</option>
+                <option value="app">Erro no aplicativo</option>
+                <option value="outro">Outro</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="mensagem">Descreva o problema:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar Solicitação</button>
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+
+    <hr>
+
+    <h3>Outros meios de contato</h3>
+    <p>Telefone: (81) 99999-0000</p>
+    <p>E-mail: suporte@bocacheia.com</p>
+    <p>Horário de atendimento: Segunda a sábado, das 08h às 18h</p>
+
+    <hr>
+
+    <p>&copy; 2025 Restaurante Boca Cheia - Todos os direitos reservados. </p>
+</body>
+</html>
