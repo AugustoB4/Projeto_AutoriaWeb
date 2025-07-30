@@ -1,63 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .maior {
+            font-size: 32px;
+        }
+        .maiortbm{
+            font-size: 50px;
+        }
+        
+body {
+    margin: 0;
+    padding: 0;
+    background: #be8442 ;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: #a52a2a;
+    margin-top: 30px;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background: #a52a2a;
+    margin: 20px auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff0e0;
+    padding: 30px;
+    border: 3px dashed #deb887;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5a2d0c;
+}
+
+input[type="text"],
+select {
+    width: 95%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #deb887;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #fffdf7;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #a0522d;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4e2d8;
+    font-size: 16px;
+    color: #6b3e26;
+    border-top: 3px dashed #deb887;
+}
+    form {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon" type="image/x-icon">
     <title>Delivery</title>
 </head>
 <body>
-    <h1>Delivery.</h1>
+    <h1 class="maiortbm">Delivery</h1>
     <hr>
     <form action="#">
-        <label for="Nome">Nome: </label> <br>
+        <label for="Nome" class="maior">Nome: </label>
         <input type="text" id="Nome" required placeholder="Insira seu nome."><br>
-        <label for="Nome">Endereço: </label> <br>
+        <label for="Bairro" class="maior">Endereço: </label>
         <input type="text" id="Bairro" required placeholder="Insira seu bairro."><br>
         <input type="text" id="Rua" required placeholder="Insira sua rua."><br>
-        <input type="text" id="Casa" reaquired placeholder="Insira o número da SUA casa."><br>
-        <label for="Prato">Prato Principal:</label><br>
-        <select name="Prato" id="Prato"> <br>
-                <option value="Baião">>Baião de Dois</option>
-                <option value="CarneSolMacaxeira">>Carne de Sol com Macaxeira</option>
-                <option value="VacaAtolada">>Vaca Atolada</option>
-                <option value="GalinhaPirão">>Galinha Caipira com Pirão</option>
-                <br>
+        <input type="text" id="Casa" required placeholder="Insira o número da SUA casa."><br>
+        <label for="Prato" class="maior">Prato Principal:</label>
+        <select name="Prato" id="Prato">
+                <option value="Baião">Baião de Dois</option>
+                <option value="CarneSolMacaxeira">Carne de Sol com Macaxeira</option>
+                <option value="VacaAtolada">Vaca Atolada</option>
+                <option value="GalinhaPirão">Galinha Caipira com Pirão</option>
         </select>
         <br>
-        <label for="Acompanhamento">Acompanhamento:</label><br>
-        <select name="Acompanhamento" id="Acompanhamneto"><br>
-                <option value="FeijãoVerde">>Feijão Verde</option>
-                <option value="Cuscuz">>Cuscuz</option>
-                <option value="QueijoCoalho">>Queijo Coalho</option>
+        <label for="Acompanhamento" class="maior">Acompanhamento:</label>
+        <select name="Acompanhamento" id="Acompanhamento"><br>
+                <option value="FeijãoVerde">Feijão Verde</option>
+                <option value="Cuscuz">Cuscuz</option>
+                <option value="QueijoCoalho">Queijo Coalho</option>
         </select>
         <br>
-        <label for="Bebidas">Bebidas:</label><br>
+        <label for="Bebidas" class="maior">Bebidas:</label>
         <select name="Bebidas" id="Bebidas"> <br>
-                <option value="SucoCaju">>Suco de Caju</option>
-                <option value="CaldoCana">>Caldo de Cana</option>
-                <option value="Refrigerantes">>Refrigerantes</option>
-                <option value="AguaCoco">>Água de Coco</option>
+                <option value="SucoCaju">Suco de Caju</option>
+                <option value="CaldoCana">Caldo de Cana</option>
+                <option value="Refrigerantes">Refrigerantes</option>
+                <option value="AguaCoco">Água de Coco</option>
                 <br>
         </select>
         <br>
-        <label for="Sobremesas">Sobremesas:</label><br>
+        <label for="Sobremesas" class="maior">Sobremesas:</label>
         <select name="Sobremesas" id="Sobremesas"> <br>
-                <option value="Cartola">>Cartola</option>
-                <option value="BoloPote">>Bolo de Pote</option>
-                <option value="PéMoleque">>Refrigerantes</option>
-                <option value="AguaCoco">>Água de Coco</option>
+                <option value="Cartola">Cartola</option>
+                <option value="BoloPote">Bolo de Pote</option>
+                <option value="PéMoleque">Pé de Moleque</option>
+                <option value="AguaCoco">Água de Coco</option>
                 <br>
         </select>
         <br> <input type="submit">
     </form>
-    <footer>
-        <a href="index.html">Voltar para a página inicial.</a>
-   <hr>
-    <p class="direitos">Endereço: Rua Ademilton Figueiredo, 04 – Cruzeta, RN</p>
-    <p class="direitos">Contato: (81) 4002-8922</p>
-    <p class="direitos"><em>&copy; 2025 Restaurante Boca Cheia – Todos os direitos reservados</em></p>
-</footer>
+    <hr>
 </body>
+<footer>
+    <p class="Final">&copy; 2025 Restaurante Boca Cheia. Todos os direitos reservados.</p>
+    <p class="Final">Endereço: Rua Nordestinos Famintos, 123 - Caicó, RN</p>
+</footer>
 </html>

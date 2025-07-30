@@ -19,12 +19,15 @@ h1 {
 }
 h2 {
     color: #a53b0d;
+    font-size: 30px;
 }
 p {
-    color: #5C3A21
+    color: #5C3A21;
+    font-size: 20px;
 }
 a {
-    color: #f4a300
+    color: #b27700;
+    font-size: 18px;
 }
 .complementar {
     color: #458faf

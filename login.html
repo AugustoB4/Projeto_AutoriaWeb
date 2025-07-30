@@ -5,65 +5,110 @@
   <meta charset="UTF-8">
   <title>login.html</title>
   <style>
-    footer {
-        color: rgb(170, 170, 170);
-        line-height: 3;
-    }
     body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6e3; /* Bege claro */
     }
 
-    .login-container {
+    .login {
       width: 400px;
       margin: 100px auto;
       padding: 30px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: #fffaf3;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e0c8a1;
     }
 
     h2 {
-      color: #333;
+      text-align: center;
+      color: #803300; /* Marrom queimado */
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #b98f57;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #5c3d1a;
+      font-weight: bold;
     }
 
     input[type="email"] {
       width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #d3b889;
+      border-radius: 6px;
+      background-color: #fffaf1;
+      font-size: 14px;
+    }
+
+      input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #d3b889;
+      border-radius: 6px;
+      background-color: #fffaf1;
+      font-size: 14px;
     }
 
     button {
       width: 100%;
-      padding: 10px;
-      background-color: #af0a0a;
-      border: none;
+      padding: 12px;
+      background-color: #c1440e;
       color: white;
-      border-radius: 4px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
       font-size: 16px;
-      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #da7d77;
+      background-color: #e25b26;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 80px;
     }
   </style>
 </head>
 <body>
-
-  <div class="login-container">
-    <h2>Cadastre seu restaurante</h2>
-    <footer>Entre e ganhe 1 mês de mensalidade grátis!</footer>
+  <div class="login">
+    <div class="logo">
+      <img src="android-chrome-192x192.png" alt="Logo Boca Cheia">
+    </div>
+    <h2>Cadastre-se!</h2>
+    <footer>Entre e ganhe 10% de desconto em sua primeira compra!</footer>
     <form action="index.html" method="post">
       <label for="email">Email:</label>
-      <input type="email" id="" name="" required>
+      <input type="email" id="email" name="email" required>
+      <label for="name">Nome:</label>
+       <input type="text" id="" name="" required>
       <a href="index.html">
-        <button type="submit">Entrar</button>
-      </a>
+      <button type="submit">Entrar</button>
     </form>
   </div>
-
+  <footer>
+   <hr>
+    <p class="direitos">Endereço: Rua Ademilton Figueiredo, 04 – Cruzeta, RN</p>
+    <p class="direitos">Contato: (81) 4002-8922</p>
+    <p class="direitos"><em>&copy; 2025 Restaurante Boca Cheia – Todos os direitos reservados</em></p>
+</footer>
 </body>
 </html>
