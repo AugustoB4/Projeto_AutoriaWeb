@@ -10,14 +10,17 @@ body {
     background-size: cover;
     font-family: "Cabin Sketch", cursive;
 }
+
 footer {
     text-align: center;
 }
 h1 {
+    font-size: 40px;
     text-align: center;
     color: #c1440e
 }
 h2 {
+    font-size: 50px;
     color: #a53b0d;
     font-size: 30px;
 }
@@ -27,7 +30,8 @@ p {
 }
 a {
     color: #b27700;
-    font-size: 18px;
+    font-size: 22px;
+    
 }
 .complementar {
     color: #458faf
@@ -78,4 +82,37 @@ h1 + h3 {
 h1 + h2 {
     font-size: 30px;
     text-align: center;
+}
+#certificados {
+    background-color: #b07d54;
+    border: 2px solid #6b5c4f;
+    border-radius: 20px;
+    padding: 25px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.img {
+    width: 1500px;
+    height: 400px;
+    background-image: url('LocalizaçãoCruzeta.png');
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-position: center;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.img2 {
+    width: 1500px;
+    height: 400px;
+    background-image: url('LocalizaçãoCaicó.png');
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	background-position: center;
+    border: 1px solid black;
+    border-radius: 50px;
 }
