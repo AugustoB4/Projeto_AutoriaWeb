@@ -5,61 +5,177 @@
     <title>Suporte Técnico - Restaurante Boca Cheia</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: bisque; 
+        }
+
+        .formulário {
+        width: 600px;
+        margin: 100px auto;
+        padding: 30px;
+        background-color: #fffaf3;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0c8a1;
+        }
+
+        h2 {
+        text-align: center;
+        color: #803300; 
+        margin-bottom: 10px;
+        }
+
+        footer {
+        text-align: center;
+        font-size: 14px;
+        color: #b98f57;
+        margin-bottom: 20px;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 4px;
+        color: #5c3d1a;
+        font-weight: bold;
+
+        }
+
+        input[type="email"] {
+        width: 375px;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #d3b889;
+        border-radius: 6px;
+        background-color: #fffaf1;
+        font-size: 14px;
+        }
+
+        input[type="text"] {
+        width: 375px;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: 1px solid #d3b889;
+        border-radius: 6px;
+        background-color: #fffaf1;
+        font-size: 14px;
+        }
+
+        input[type="tel"] {
+        width: 375px;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: 1px solid #d3b889;
+        border-radius: 6px;
+        background-color: #fffaf1;
+        font-size: 14px;
+        }
+
+        .assunto select {
+        width: 375px;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: 1px solid #d3b889;
+        border-radius: 6px;
+        background-color: #fffaf1;
+        font-size: 14px;
+        }
+
+        button {
+        width: 297px;  
+        padding: 12px;
+        background-color: #c1440e;  
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;}
+
+
+        button:hover {
+        background-color: #e25b26;
+        }
+
+        .logo {
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        .logo img {
+        width: 150px;
+        }
+        h2 + footer {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #b98f57;
+        text-align: center;}
+        label p {
+        font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Restaurante Boca Cheia</h1>
-    <h2>Suporte Técnico</h2>
-    <hr>
-    <p>Se você está enfrentando problemas com pedidos, pagamentos ou precisa de ajuda com nosso sistema, preencha o formulário abaixo. Entraremos em contato o mais breve possível.</p>
-    <h3>Formulário de Contato</h3>
-    <form action="#" method="post">
-        <p>
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
-        </p>
-
-        <p>
-            <label for="email">E-mail para contato:</label>
-            <input type="email" id="email" name="email" required>
-        </p>
-
-        <p>
-            <label for="telefone">Telefone (opcional):</label>
-            <input type="tel" id="telefone" name="telefone">
-        </p>
-
-        <p>
-            <label for="assunto">Assunto do problema:</label>
-            <select id="assunto" name="assunto" required>
-                <option value="">-- Selecione --</option>
-                <option value="pedido">Problema com pedido</option>
-                <option value="pagamento">Problema com pagamento</option>
-                <option value="app">Erro no aplicativo</option>
-                <option value="outro">Outro</option>
-            </select>
-        </p>
-
-        <p>
-            <label for="mensagem">Descreva o problema:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
-        </p>
-
-        <p>
-            <button type="submit">Enviar Solicitação</button>
-            <button type="reset">Limpar</button>
-        </p>
-    </form>
-    <hr>
-    <h3>Outros meios de contato</h3>
-    <p>Telefone: (84) 4002-8922</p>
-    <p>E-mail: suporte@bocacheia.com</p>
-    <p>Horário de atendimento: Segunda a sábado, das 08h às 18h</p>
-    <footer>
+    <div class="formulário">
+        <h1>Restaurante Boca Cheia</h1>
+        <h2>Suporte Técnico</h2>
         <hr>
-        <button><a href="index.html">Voltar para a página inicial.</a></button>
-        <p class="direitos">Endereço: RR. Joao Andre, 163 - B. Novo Horizonte – Cruzeta, RN</p>
-        <p class="direitos">Contato: (84) 4002-8922</p>
-        <p class="direitos"><em>&copy; 2025 Restaurante Boca Cheia – Todos os direitos reservados</em></p>
-    </footer>
+        <p>Se você está enfrentando problemas com pedidos, pagamentos ou precisa de ajuda com nosso sistema, preencha o formulário abaixo. Entraremos em contato o mais breve possível.</p>
+        <h3>Formulário de Contato</h3>
+        <form action="#" method="post">
+            <p>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail para contato:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="telefone">Telefone (opcional):</label>
+                <input type="tel" id="telefone" name="telefone">
+            </p>
+
+            <p>
+                <section class="assunto">
+                    <label for="assunto">Assunto do problema:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">-- Selecione --</option>
+                        <option value="pedido">Problema com pedido</option>
+                        <option value="pagamento">Problema com pagamento</option>
+                        <option value="app">Erro no aplicativo</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </section>
+            </p>
+
+            <p>
+                <label for="mensagem">Descreva o problema:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <button type="submit" >Enviar Solicitação</button>
+                <button type="reset" >Limpar</button>
+            </p>
+        </form>
+        <hr>
+        <h3>Outros meios de contato</h3>
+        <p>Telefone: (84) 4002-8922</p>
+        <p>E-mail: suporte@bocacheia.com</p>
+        <p>Horário de atendimento: Segunda a sábado, das 08h às 18h</p>
+        <footer>
+            <hr>
+            <button><a href="index.html">Voltar para a página inicial.</a></button>
+            <p class="direitos">Endereço: RR. Joao Andre, 163 - B. Novo Horizonte – Cruzeta, RN</p>
+            <p class="direitos">Contato: (84) 4002-8922</p>
+            <p class="direitos"><em>&copy; 2025 Restaurante Boca Cheia – Todos os direitos reservados</em></p>
+        </footer>
+    </div>
 </body>
 </html>

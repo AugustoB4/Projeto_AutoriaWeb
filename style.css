@@ -83,12 +83,6 @@ h1 + h2 {
     font-size: 30px;
     text-align: center;
 }
-#certificados {
-    background-color: #f8e093;
-    border: 2px solid #d8cc45;
-    border-radius: 20px;
-    padding: 25px;
-}
 .container {
     display: flex;
     justify-content: center;
